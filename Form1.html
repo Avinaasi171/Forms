@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML Form</title>
+        <style>
+            #hov:hover{
+                color: red;
+                background-color: blue;
+            }
+        </style>
+        <form action="thank.html">
+            <fieldset>
+                <legend>Personal details</legend>
+                <table>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label>First Name:</label></td>
+                        <td><input type="text" name="fname" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Middle Name:</label></td>
+                        <td><input type="text" name="mname"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label>Last Name:</label></td>
+                        <td><input type="text" name="lname" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Email ID:</label></td>
+                        <td><input type="email" name="mail" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Phone number:</label></td>
+                        <td><input type="number" name="pno" pattern="[6-9]{1}[0-9]{9}" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>DOB:</label></td>
+                        <td><input type="date" name="doj"</td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>Educational details</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label>Department:</label>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td>
+                            <input type="radio" name="dept"><label>CS</label>  
+                            <input type="radio" name="dept"><label>ECE</label>  
+                            <input type="radio" name="dept"><label>Civil</label> 
+                            <input type="radio" name="dept"><label>Mech</label>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <label for="yop">YOP:</label>
+                        </td>
+                        <td>
+                            <input list="year" id="yop" name="yop">
+                            <datalist id="year">
+                                <option>2023</option>
+                                <option>2022</option>
+                                <option>2021</option>
+                                <option>2020</option>
+                                <option>2019</option>
+                                <option>2018</option>
+                            </datalist>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Skills:</label>
+                        </td>
+                        <td>
+                            <input type="checkbox"><label>HTML</label>
+                            <input type="checkbox"><label>CSS</label>
+                            <input type="checkbox"><label>JS</label>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <pre>
+                
+            </pre>
+            <input id="hov" type="submit">
+        </form>
+    </head>
+    <body>
+    
+    </body>
+</html>
